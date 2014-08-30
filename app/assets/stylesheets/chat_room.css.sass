@@ -1,0 +1,59 @@
+body
+  background: #eee
+
+#chat-container
+  position: fixed
+  top: 25px
+  left: 5px
+  right: 5px
+  bottom: 30%
+  display: block
+  background: #fff
+  border: 1px solid #cfcfcf
+  overflow: hidden
+  overflow-y: scroll
+
+#message-container
+  position: fixed
+  top: calc(70% + 5px)
+  left: 5px
+  right: 5px
+  bottom: 5px
+  display: block
+  background: #fff
+  border: 1px solid #cfcfcf
+
+  textarea
+    display: block
+    position: absolute
+    top: 5px
+    left: 5px
+    right: 100px
+    width: 80%
+    bottom: 5px
+    resize: none
+
+  button
+    float: right
+    margin: 5px
+    width: calc(20% - 15px)
+
+#logout
+  margin: 5px
+  float: right
+
+#messages
+  margin: 0 100px
+
+  li
+    list-style: none
+    margin-bottom: 10px
+
+    .user, .message
+      border-radius: 5px
+      padding: 5px
+      display: inline-block
+    .user
+      background: #e7f9e5
+    .message
+      background: #efefef

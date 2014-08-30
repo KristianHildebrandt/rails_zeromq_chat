@@ -1,0 +1,13 @@
+%a{href: '/logout', id: 'logout'}
+  Logout
+#chat-container
+  %ul#messages
+    - @messages.all.each do |message|
+      %li
+        .user=message.user
+        .message=message.message
+
+#message-container
+  =simple_form_for :message, url: :post_message do |f|
+    = f.input :message, as: :text, label: false
+    = f.button :button, 'Send', class: 'btn btn-success'
